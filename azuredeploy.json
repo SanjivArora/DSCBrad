@@ -1,5 +1,5 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
@@ -117,7 +117,8 @@
         },
          "parametersLink": {
                 "uri": "[concat(parameters('_artifactsLocation'), '/', variables('NestOneTemplateFolder'), '/', variables('NestTwoTemplateParametersFileName'), parameters('_artifactsLocationSasToken'))]",
-                "contentVersion": "1.0.0.0",
+                "contentVersion": "1.0.0.0"
+        },
         "parameters": {
           "virtualNetworkName": {
             "value": "[variables('virtualNetworkName')]"
@@ -316,7 +317,8 @@
         },
          "parametersLink": {
                 "uri": "[concat(parameters('_artifactsLocation'), '/', variables('NestOneTemplateFolder'), '/', variables('NestOneTemplateParametersFileName'), parameters('_artifactsLocationSasToken'))]",
-                "contentVersion": "1.0.0.0",
+                "contentVersion": "1.0.0.0"
+         },
         "parameters": {
           "virtualNetworkName": {
             "value": "[variables('virtualNetworkName')]"
