@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworkName": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "virtualNetworkAddressRange": {
+            "value": "10.0.0.0/16"
+        },
+        "subnetName": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "subnetRange": {
+            "value": "10.0.0.0/24"
+        },
+        "DNSServerAddress": {
+            "value": "## TO BE DEFINED ##"
+        }
+    }
+}
