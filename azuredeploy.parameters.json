@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "adminUsername": {
-            "value": "azadministrator#"
+            "value": "bradAdministrator"
         },
         "adminPassword": {
             "value": "DeepHeat@2021"
         },
         "domainName": {
-            "value": "bradsab"
+            "value": "bradsLab"
         },
         "dnsPrefix": {
             "value": "bradsLab"
