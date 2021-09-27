@@ -115,10 +115,6 @@
           "uri": "[concat(parameters('_artifactsLocation'), '/', variables('NestOneTemplateFolder'), '/', variables('NestTwoTemplateFileName'), parameters('_artifactsLocationSasToken'))]",
           "contentVersion": "1.0.0.0"
         },
-         "parametersLink": {
-                "uri": "[concat(parameters('_artifactsLocation'), '/', variables('NestOneTemplateFolder'), '/', variables('NestTwoTemplateParametersFileName'), parameters('_artifactsLocationSasToken'))]",
-                "contentVersion": "1.0.0.0"
-        },
         "parameters": {
           "virtualNetworkName": {
             "value": "[variables('virtualNetworkName')]"
@@ -315,10 +311,6 @@
           "uri": "[concat(parameters('_artifactsLocation'), '/', variables('NestOneTemplateFolder'), '/', variables('NestOneTemplateFileName'), parameters('_artifactsLocationSasToken'))]",
           "contentVersion": "1.0.0.0"
         },
-         "parametersLink": {
-                "uri": "[concat(parameters('_artifactsLocation'), '/', variables('NestOneTemplateFolder'), '/', variables('NestOneTemplateParametersFileName'), parameters('_artifactsLocationSasToken'))]",
-                "contentVersion": "1.0.0.0"
-         },
         "parameters": {
           "virtualNetworkName": {
             "value": "[variables('virtualNetworkName')]"
