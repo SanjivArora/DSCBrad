@@ -1,0 +1,27 @@
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'IaC_ARM_Template_Dev'
+    subscriptionId: 'fb7c94b5-7744-429b-a7ae-db1458359f71'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'Brads-RG'
+    location: 'Australia East'
+    templateLocation: 'Linked artifact'
+    csmFile: '/home/vsts/work/1/a/azuredeploy.json'
+    csmParametersFile: '/home/vsts/work/1/a/azuredeploy.parameters.json'
+    deploymentMode: 'Incremental'
