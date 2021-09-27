@@ -3,16 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "adminUsername": {
-            "value": "## TO BE DEFINED ##"
+            "value": "azadministrator#"
         },
         "adminPassword": {
-            "value": "## TO BE DEFINED ##"
+            "value": "DeepHeat@2021"
         },
         "domainName": {
-            "value": "bertsLab"
+            "value": "bradsab"
         },
         "dnsPrefix": {
-            "value": "## TO BE DEFINED ##"
+            "value": "bradsLab"
         },
         "windowsserver": {
             "value": "2016-Datacenter"

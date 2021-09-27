@@ -3,19 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualNetworkName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "bradNW"
         },
         "virtualNetworkAddressRange": {
             "value": "10.0.0.0/16"
         },
         "subnetName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "bradSN"
         },
         "subnetRange": {
             "value": "10.0.0.0/24"
         },
         "DNSServerAddress": {
-            "value": "## TO BE DEFINED ##"
+            "value": "bradsLab"
         }
     }
 }
