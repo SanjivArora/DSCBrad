@@ -9,7 +9,7 @@
             "value": "DeepHeat@2021"
         },
         "domainName": {
-            "value": "bradsLab"
+            "value": "bradsLab.mydomain.com"
         },
         "dnsPrefix": {
             "value": "bradsLab"
