@@ -18,7 +18,7 @@
             "value": "2016-Datacenter"
         },
         "_artifactsLocation": {
-            "value": ""
+            "value": "$(System.DefaultWorkingDirectory)."
         },
         "_artifactsLocationSasToken": {
             "value": ""
